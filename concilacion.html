@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/styles1.CSS">
+    
+    <title>index_caracteres</title>
+</head>
+<body class="body">
+    <div class="container__active">
+        <form class="form"> 
+            <div class="form__group">
+                <img src="img/logo/Doodle.svg" alt="" class="form__logo">
+            </div>
+            <h2 class="form__title">Conciliación</h2>
+            <div class="form__container">
+                <div class="form__checkbox">
+                    <input type="checkbox" name="checkbox" id="check">
+                    <label for="check">Todo</label>
+    
+                    <input type="checkbox" name="checkbox2" id="check2">
+                    <label for="check2">Pendiente</label>
+                </div>
+    
+                <div class="form__group">
+                    <label for="text" class="form__label-select">Cliente:</label>
+                    <select name="aduPat" id="AduanaPatente" class="form__select">
+                        <option value="">Seleccione</option>
+                        <option value="MME0108109Q7">Ejemplo de Empresa</option>
+                        <option value="MSF9706033T6">Mahle Sistemas de filtración de México S.A. de C.V.</option>
+                        <option value="AME0909284I0">AUTOLIV MÉXICO EAST, S.A. DE C.V. (AMM)</option>
+                        <option value="ASW010518IB7">AUTOLIV STEERING WHEELS MÉXICO, S. DE R.L. DE C.V.(ASW)</option>
+                        <option value="AME960412A92">AUTOLIV MÉXICO S.A. DE C.V. (AMX)</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="text" class="form__label-select">Acciones:</label>
+                    <select name="empresas" id="acciones" class="form__select">
+                        <option value="pantalla">Muestra Pendientes</option>
+                        <option value="excel">Información en Excel</option>
+                        <option value="incidencias">Reporte Incidencias</option>
+                        <option value="copiar">Copiar Registros</option>
+                        <option value="borrar">Eliminar Registros</option>
+                        <option value="reporteNP">Reporte NP sin NICO</option>
+                        <option value="reporteNPN">Reporte NP con NICO</option>
+                    </select>
+                </div>
+                <input type="button" class="form__submit" value="Aplicar Acción">
+                <input type="button" class="form__submit" value="Conciliar">
+                <div class="form__checkbox">
+                    <input type="checkbox" name="checkbox" id="agrupado">
+                    <label for="agrupado">Agrupado</label>
+                </div>
+            </div>
+        </form>
+        <form action="" class="form__table-container">
+            <table>
+                <thead>
+                    <th>Elemento</th>
+                    <th>Elemento</th>
+                    <th>Elemento</th>
+                    <th>Elemento</th>
+                </thead>
+                <tbody>
+                    <td class="form__table-button">
+                        <div class="form__checkbox">
+                            <input type="checkbox" name="checkbox" id="checkejemplo">
+                            <label for="checkejemplo">Todo</label>
+            
+                            <input type="checkbox" name="checkbox2" id="checkejemplo2">
+                            <label for="checkejemplo2">Pendiente</label>
+                        </div>
+                    </td>
+                    <td class="form__table-button">
+                        <select name="empresas" id="acciones" class="form__select">
+                            <option value="pantalla">Muestra Pendientes</option>
+                            <option value="excel">Información en Excel</option>
+                            <option value="incidencias">Reporte Incidencias</option>
+                            <option value="copiar">Copiar Registros</option>
+                            <option value="borrar">Eliminar Registros</option>
+                            <option value="reporteNP">Reporte NP sin NICO</option>
+                            <option value="reporteNPN">Reporte NP con NICO</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" class="form__submit" value="Aplicar Acción">
+                        <input type="button" class="form__submit" value="Conciliar">
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fejemplo" placeholder="Ingresar Dato" class="form__table-text">
+                    </td>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

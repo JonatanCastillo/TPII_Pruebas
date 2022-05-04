@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles1.CSS">
+    <title>CAE_CambioDeRegimen</title>
+</head>
+<body class="body">
+    <!-- <div class="buscador">
+
+    </div> -->
+    <nav class="navbar">
+        <ul class="menu">
+            <div class="container-ubicacion">
+                <img src="SVG/cambios_de_regimen.svg" alt="" class="list__ubicado">
+                <a href="" class="list__menu2">Cambio de Regimen</a>
+            </div>
+            <li class="submenu">
+                <div class="btn">
+                    <img src="SVG/Inicio.svg" alt="" class="list__img">
+                    <a href="#" class="list__menu">Inicio</a>
+                </div>
+            </li>
+            <li class="submenu">
+                <div class="btn ">
+                    <img src="SVG/ProcesoCoves.svg" alt="" class="list__img">
+                    <a href="#" class="list__menu" >Proceso de Coves</a>
+                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                </div>
+                <ul class="menu2">
+                    <li class="tooltip-prueba" title="El uso de esta herramienta será remplazar los símbolos (!) que se genera en LAY OUT DE COVES en lugar de las comas.
+                    Esta herramienta debe ser usada antes de llevarse a cabo la firma de sus COVES en sistema de captura CAAAREM.
+                    ">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Asigna Comas en Desc de Coves</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta herramienta te ayudara para buscar caracteres no permitidos ((#. %, acentos ortográficos, º, etc.) en los campos de cove: Proveedor, Importador, NP, Descripción. Ya que fueron ubicados la misma aplicación te apoya a eliminar el dato en los coves. Se permite colocar 20 facturas.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Validacion de Caracteres Raros</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Busca carácter en descripción de cove: El uso de esta herramienta será para buscar algunos caracteres no permitidos ((#. %, acentos ortográficos, º, etc.) dentro de las descripciones del COVE, para cuando tenga error al momento de firmar.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Buscar Caracter en Desc. de Cove</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta aplicación podrás utilizarla con todos aquellos coves que requieran un cambio en la fecha de transmisión de acuerdo con la instrucción que tengan del cliente, este cambio permite realizarlo por bloque de facturas o por carga de archivo Excel. Adicional encontraran el formato del Excel a utilizar.">
+                        <div class="btn">
+                            <a href="#"class="list__menu" >Actualizar Fecha de Transmisión</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta aplicación podrán emplearla en dos momentos, cuando el servicio de VUCEM presente intermitencia y no puedan firmar sus COVES y cuando tengamos que capturar coves de un pedimento rectificado que hayamos cargado a sistema sin dicha información.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Coves Exportados</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta aplicación nos ayuda a ingresar en el numero de factura o numero de parte de nuestros coves algún carácter no permitido por el sistema de captura.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Agregar Caracter</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <div class="btn">
+                    <img src="SVG/ProcesoCaptura.svg" alt="" class="list__img">
+                    <a href="#" class="list__menu">Proceso de Captura</a>
+                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                </div>
+                <ul class="menu2">
+                    <li class="submenu-lv2">
+                        <div class="btn-lv2">
+                            <a href="#" class="list__menu">Proceso Layout</a>
+                            <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                        </div>
+                        <ul class="menu-lv2">
+                            <li class="submenu-lv3">
+                                <div class="btn-lv3">
+                                    <a href="#" class="list__menu">Cove</a>
+                                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                                </div>
+                                <ul class="menu-lv3">
+                                    <li>
+                                        <div class="btn-lv4">
+                                            <a href="#" class="list__menu">Layout Cove vs Empresa</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="btn-lv4">
+                                            <a href="#" class="list__menu">Consolidados</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="submenu-lv3">
+                                <div class="btn-lv3">
+                                    <a href="#" class="list__menu">Descargos</a>
+                                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                                </div>
+                                <ul class="menu-lv3">
+                                    <li class="tooltip-prueba">
+                                        <div class="btn">
+                                            <a href="#" class="list__menu">Layout DESCARGO vs Empresa</a>
+                                        </div>
+                                    </li>
+                                    <li class="tooltip-prueba">
+                                        <div class="btn">
+                                            <a href="#" class="list__menu">Descargos</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tooltip-prueba" title="El uso de esta herramienta será para las partidas de los pedimentos que tengamos capturados en nuestro sistema CAAAREM y tengamos que cambiar la FP (forma de pago) en IGI E IVA, a un número considerable de partidas. 
+                    Del mismo modo agregar un peso cuando el sistema no lo hace con valores muy pequeños.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Actualizar FP de IGI a IVA</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Estas herramientas fueron creadas para poder hacer modificaciones en pedimentos en donde las fechas de pago y entrada nos causen diferencia en el FM (Factor Moneda) de nuestras facturas.Así mismo para hacer el cambio en la fecha de pago de pedimentos F4, F5, A3 (Para las claves A3 debemos tener precaución de que el tipo de cambio este determinado por la fecha Original para que no altere el tipo de cambio en pedimento)">
+                        <div class="btn">
+                            <a href="" class="list__menu">Actualizar Fecha de Entrada/Pago</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta herramienta la pueden utilizar para asignar signo (,) en las descripciones de sus partidas cuando se efectué la exportación con un símbolo distinto al mencionado.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Asignar Comas en Descripción</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta herramienta la pueden utilizar para realizar cambios en la referencia y consecutivo de pedimento CAE en caso de haber tenido algún error en cualquiera de estos dos campos.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Cambio de Pedimento/Referencia</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta herramienta la pueden utilizar para realizar la carga de sus observaciones a nivel partida de forma masiva, con esto podemos tener un ahorro de tiempo dentro de nuestro proceso al evitar realizarlo de manera manual.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Carga de Observaciones</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta aplicación se genera con la finalidad de agilizar la colocación en partidas de los permisos que tengan que llevar su pedimento.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Carga Permisos</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que ayuda a colocar un pedimiento normal cargado por archivo m o xml a nuestro sistema de captura al apartado de rectificaciones.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Crea R1</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Con esta aplicación podemos generar la información de nuestras etiquetas tomando como único dato el número de COVE de nuestra factura.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Observaciones Cove</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos procesas archivo en Excel con datos de base con la que realiza proceso captura, al cargar esta información en aplicación procesa y arroja carpeta con los diferentes layout que permite cargar a sistema de captura.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Proceso Master CR</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta aplicación se crea para poder revisar si la información de nuestro proveedor fue utilizada en algún pedimento que ya fue pagado, para que de no ser así se puede llevar a cabo la eliminación del mismo.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Proveedores en Ped Pagados</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Nos ayuda a eliminar toda la basura que tenga cualquier archivo Excel.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Limpia Excel</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Nos ayuda a validar dentro de la información de DATAS con los que cuenta la agencia, en los cuales revisamos si el pedimento de descargo se encuentra dentro del registro 702 y cuenta con un pedimento rectificado.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Pedimentos Rectificados</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos apoya a tomar la cadena original de los coves que en formato pdf para poder generar archivo txt resultado, que te ayudaran en tu proceso de captura.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Extrae Cadena Original</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Nos apoya a colocar en partidas que se deba declarar el impuesto, la tasa e importe, así mismo nos apoya a eliminar la información.">
+                        <div class="btn">
+                            <a href="" class="list__menu">IEPS</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Realiza el cambio únicamente de la referencia de un pedimento que no esté pagado.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Cambio de Referencia</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos ayuda a realizar carga de manera masiva del identificador PO a las partidas.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Carga Identificador PO</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Herramienta que nos apoya a unificar archivos PDF de avisos automáticos con certificados de molino, así mismo se tiene la opción de renombrar los archivos con las nomenclaturas específicas que nos permiten realizar la carga a nuestra plataforma CAEP.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Une AA & CM</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="" class="list__menu">Actualiza Valor Seguros</a>
+                        </div>
+                    </li>
+                </ul>
+                
+            </li>
+            <li class="submenu">
+                <div class="btn">
+                    <img src="SVG/ProcesoValidacion.svg" alt="" class="list__img">
+                    <a href="#" class="list__menu">Proceso Validación</a>
+                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                </div>
+                <ul class="menu2">
+                    <li class="tooltip-prueba" title="Aplicación que te apoya a validar que la información de se está descargando no se encuentre capturado previamente en el sistema de captura.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Consulta Descargos</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que te apoya a validar que la información de las facturas que se encuentran capturadas previamente en el sistema de captura.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Consulta Facturas</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Herramienta utilizada para validar el contenido de los pedimentos capturados contra los criterios propios de operación con la finalidad de disminuir errores">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Validar Pedimento</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <div class="btn">
+                    <img src="SVG/DataStage.svg" alt="" class="list__img">
+                    <a href="#" class="list__menu">DataStage & Archivo M</a>
+                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                </div>
+                <ul class="menu2">
+                    <li class="tooltip-prueba" title="Herramienta que nos ayuda a procesar información de data para poder generar un archivo m.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">DataStage</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos apoya a tener un pdf generado a partir de los datos del archivo m generado en la aplicación (DATASTAGE).">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Genera PDF de Archivo M</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos apoya generar un data más específica que solo tendrá información de los pedimentos de los que se requiera información.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Genera Data x Pedimentos (TPII)</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <div class="btn">
+                    <img src="SVG/GeneracionDeInformacion.svg" alt="" class="list__img">
+                    <a href="#" class="list__menu">Generación de Información</a>
+                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                </div>
+                <ul class="menu2">
+                    <li class="submenu-lv2">
+                        <div class="btn-lv2">
+                            <a href="#" class="list__menu">Fraccion-Nicos</a>
+                            <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                        </div>
+                        <ul class="menu-lv2">
+                            <li class="tooltip-prueba" title="Esta herramienta nos apoya a generar una correlación de las fracciones de la tarifa 2012 vs tarifa 2020, puede utilizarse por archivo y por fracción.">
+                                <div class="btn">
+                                    <a href="" class="list__menu">Correlación Fracciones - Nico</a>
+                                </div>
+                            </li>
+                            <li class="tooltip-prueba" title="Aplicación que te apoyara a realizar correlaciones de fracciones por archivo y la correlación se realizara de tarifa 2012 a 2020 y viceversa.">
+                                <div class="btn">
+                                    <a href="" class="list__menu">Actualiza Fracciones Archivo</a>
+                                </div>
+                            </li>
+                            <li class="tooltip-prueba" title="Aplicación que nos permite realizar la actualización en COVE de todas las fracciones de la tarifa 2012 a 2020. Al no detecta alguna aparce error.">
+                                <div class="btn">
+                                    <a href="" class="list__menu">Actualiza Correlación COVES</a>
+                                </div>
+                            </li>
+                            <li class="tooltip-prueba" title="Aplicación que nos permite realizar la actualización en COVE de todas las fracciones de la tarifa 2012 a 2020. Al no detecta alguna aparce error.">
+                                <div class="btn">
+                                    <a href="" class="list__menu">Actualiza Fracción COVE</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos apoya a realizando agrupación de una base en Excel con los criterios que seleccionen dentro de la misma aplicación, también señala las fracciones arancelarias que tengan RRNA. Anexo 10, por dar un ejemplo.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Agrupador</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta aplicación nos apoya a conocer todos los movimientos que tuvo un pedimento en el sistema de captura y aplicaciones.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Bitacora</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos permite generar cartas sedenas, tomando como base la información de las partidas del pedimento que cuenten con excepciones propias de las fracciones que requieren dicho documento.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Carta SEDENA</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos permite generar generara cartas para pedimentos que sean de desperdicio. ">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Carta Desperdicio</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos permite generar cartas tomando la información de nuestras etiquetas en pedimento.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Carta Traducción de OBS</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos ayuda a generar formato interno de cartas traducción en archivos Word individuales y agrupando todo en un solo documento.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Carta Traducción</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Carta Traducción Faurecia</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Consulta Tramite de Edocument</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Contador de Datos</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Colocamos fecha del día y nos marca el día juliano que le corresponde.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Día Juliano</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Herramienta que nos permite generar información para poder unir información en Excel para posterior pasar a un documento Word.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Excel Cartas Depreciación</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos ayuda a generar un formato interno de factura proforma">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Genera Facturas</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Herramienta que nos apoya a generar un archivo layout-cove y máster tomando como base la información de un archivo txt con la estructura similar de un archivo M y el cual debe contener el registro 999 como final de archivo.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Generador de Layout-COVE-TXT</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que te apoya con la información de las bases dadas de alta en referencias y contendrá información de pedimentos según fecha de pago, del día de la semana, IVA, IGI, DTA, PREV según fecha de pago, planta por pedimento de acuerdo con el RFC que coloques.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Reporte Semana & Día</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos apoya a generar un reporte detallado de los pedimentos de todas las operaciones que realizamos dentro de la agencia.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Reporteador</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Herramienta que te apoya a unir la hoja 1 de uno o más archivos Excel en un uno solo archivo nuevo con el contenido de todos los archivos seleccionados.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Unir Excel</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que apoya a realizar la impresión de pedimentos sin que se visualice la información de las observaciones de partida.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Impresión Pedimentos sin Etiquetas</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que permite obtener los archivos PDF de los Edocuments que hayan sido digitalizados de una lista pedimentos con un RFC en específico">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Descaga ED's</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos apoya a generar reporte con los nombres cortos utilizados en operaciones realizadas en la agencia con los números de parte, códigos de proveedor y plantas, esto se obtiene relacionando la información de etiquetas con datos de facturas.">
+                        <div class="btn">
+                            <a href="" class="list__menu">Catálogos Proveedores</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Herramienta que apoya a generar facturas proformas en formato pdf y Excel, en especifico de la empresa Benteler.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Proformas Benteler</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos permite realizar comparación de los registros de un archivo m de origen (el que proporciona el cliente o generamos con herramienta interna) vs ">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Compara M</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos apoya a calcular el factor de INPC de acuerdo con la fecha de pago original el cual será asignado en la diferencia de contribuciones de pedimento de rectificación.">
+                        <div class="btn">
+                            <a href="" class="list__menu">INPC R1</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que nos apoya con la generación de reporte de contribuciones de todos los tipos de operaciones, el cual contendrán todas las contribuciones a pagar y pagadas de los pedimentos.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Reporte Contribuciones</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Con esta herramienta podrás generar reporte que extrae datos de pedimentos de origen tomándolos de DATA STAGE, la información se generara en un archivo Excel.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Datos de Partidas (DS)</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Herramienta que puedes utilizar para generar un reporte con información detallada con la información que clasificación llena de su revisión.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Reporte Clasificación</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta herramienta te puede apoyar para realizar la descarga de las observaciones de los pedimentos para poder conocer lo declarado en pedimento.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Descarga Observaciones</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta aplicación te apoyara a generar los coves de formato VUCEM de tus operaciones que declaran COVES basados en los xml de los mismos. ">
+                        <div class="btn">
+                            <a href="#" class="list__menu">COVE VUCEM</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Esta aplicación nos apoya a realizar una descarga de todos los documentos cargados en CAEP, en dos formatos ya sea ZIP o mediante una liga que les permitirá realizar la descarga a la aduana.">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Descarga Exp. CAEP</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba" title="Aplicación que te apoyara a generar un archivo m tomando como base la información de un pedimento con formato original en pdf. ">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Genera M-PDF</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <div class="btn">
+                    <img src="SVG/Proyectos CR.svg" alt="" class="list__img">
+                    <a href="#" class="list__menu">Proyectos CR</a>
+                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                </div>
+                <ul class="menu2">
+                    <li class="submenu-lv2">
+                        <div class="btn-lv2">
+                            <a href="#" class="list__menu">Layout Cove Cadillac</a>
+                            <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                        </div>
+                        <ul class="menu-lv2">
+                            <li class="tooltip-prueba">
+                                <div class="btn">
+                                    <a href="#" class="list__menu">F4</a>
+                                </div>
+                            </li>
+                            <li class="tooltip-prueba">
+                                <div class="btn">
+                                    <a href="#" class="list__menu">F5</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-lv2">
+                        <div class="btn-lv2">
+                            <a href="#" class="list__menu">Padados JC</a>
+                            <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                        </div>
+                        <ul class="menu-lv2">
+                            <li class="tooltip-prueba">
+                                <div class="btn">
+                                    <a href="" class="list__menu">Normal</a>
+                                </div>
+                            </li>
+                            <li class="tooltip-prueba">
+                                <div class="btn">
+                                    <a href="#" class="list__menu">Rectificación</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-lv2">
+                        <div class="btn-lv2">
+                            <a href="#" class="list__menu">Serviacero 3.1.8</a>
+                            <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                        </div>
+                        <ul class="menu-lv2">
+                            <li class="tooltip-prueba">
+                                <div class="btn">
+                                    <a href="#" class="list__menu">Procesar XML  Coves</a>
+                                </div>
+                            </li>
+                            <li class="tooltip-prueba">
+                                <div class="btn">
+                                    <a href="#" class="list__menu">Generación Carta</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-lv2">
+                        <div class="btn-lv2">
+                            <a href="#" class="list__menu">Observaciones Layout</a>
+                            <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                        </div>
+                        <ul class="menu-lv2">
+                            <li class="tooltip-prueba">
+                                <div class="btn">
+                                    <a href="#" class="list__menu">Carga Observaciones Para Layout</a>
+                                </div>
+                            </li>
+                            <li class="tooltip-prueba">
+                                <div class="btn">
+                                    <a href="#" class="list__menu">Validación Etiquetas Layout (R1)</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="" class="list__menu">Coves por Pedimento</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Diferencias Rectificación</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="" class="list__menu">IVA Agrupado por Fracción</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="" class="list__menu">Proceso SAS</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="" class="list__menu">Sbn-Scrap-Lay Cove/Concentrado</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Carga PO R1</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Carga Catálogo AAM</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Monroe - TXT</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Collado - M</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Actualiza Valor Seguros</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Prepedimento Tyssen Presta</a>
+                        </div>
+                    </li>
+                    <li class="tooltip-prueba">
+                        <div class="btn">
+                            <a href="#" class="list__menu">Recupera Firma HSBC</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <div class="btn">
+                    <img src="SVG/InformaciónIMAR.svg" alt="" class="list__img">
+                    <a href="#" class="list__menu">Información IMAR</a>
+                    <img src="SVG/Flecha.svg" alt="" class="list__arrow">
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container__active">
+        <form class="form"> 
+            <h2 class="form__title">Asigna Comas en Descripción de Coves</h2>
+    
+            <div class="form__container">
+                <div class="form__group">
+                    <input type="text"  id="form__text" class="form__input" autocomplete="off" placeholder=" ">
+                    <label for="texto" class="form__label">No de Cliente</label>
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group">
+                    <input type="text"  id="form__text2" class="form__input" autocomplete="off" placeholder=" ">
+                    <label for="texto" class="form__label">No Factura</label>
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group">
+                    <label for="text" class="form__label-select">Seleccione Patente</label>
+                    <select name="aduPat" id="aduPat" class="form__select">
+                        <option value="pat01">Patente01</option>
+                        <option value="pat01">Patente02</option>
+                        <option value="pat01">Patente03</option>
+                    </select>
+                </div>
+    
+                <div class="form__group">
+                    <label for="text" class="form__label-select">Facturas (Uno por Línea)</label>
+                    <textarea name="facturas" id="facturas" cols="20" rows="10" class="form__textarea">
+    
+                    </textarea>
+                </div>
+                <div class="form__group">
+                    <input type="text"  id="form__text3" class="form__input" autocomplete="off" placeholder=" " value="Complemento">
+                    <label for="texto" class="form__label">Pedimento</label>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group">
+                    <label for="fechaTransmision" class="form__label-select">Fecha Transmision:</label>
+                    <input type="date" name="fechaTransmision" id="fechaTransmision" class="form__date">       
+    
+                </div>
+    
+                <div class="form__radio">
+                    <input type="radio" name="fav_op" id="DesExp">
+                    <label for="DesExp">Desactivar Exp</label>
+    
+                    <input type="radio" name="fav_op" id="ActExp">
+                    <label for="ActExp">Activar Exp</label>
+                </div>
+    
+                <div class="form__checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox1">
+                    <label for="checkbox1">Checkbox 1</label>
+    
+                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                    <label for="checkbox2">Checkbox 2</label>
+                </div>
+                <div class="form__group">
+                    <input type="file" name="" id="" class="upload-file">
+                </div>
+    
+                <input type="submit" class="form__submit" value="Enviar">
+            </div>
+        </form>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/2.5.3/tippy.all.js"></script>
+    <script src="js/tooltip.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="js/navbar.js"></script>
+
+</body>
+</html>

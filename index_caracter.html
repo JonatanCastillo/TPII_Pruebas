@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/styles1.CSS">
+    
+    <title>index_caracteres</title>
+</head>
+<body class="body">
+    
+    <div class="container__active">
+        <form class="form"> 
+            <div class="form__group">
+                <img src="img/logo/Doodle.svg" alt="" class="form__logo">
+            </div>
+            <h2 class="form__title">Validación Caracteres COVES</h2>
+    
+            <div class="form__container">
+                <div class="form__group">
+                    <input type="text"   name="cliente" id="cliente" class="form__input" autocomplete="off" placeholder=" " maxlength="6" size="4">
+                    <label for="texto" class="form__label">No de Cliente</label>
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group">
+                    <label for="text" class="form__label-select">Aduana-Patente</label>
+                    <select name="aduPat" id="AduanaPatente" class="form__select">
+                        <option value="">Seleccione</option>
+                        <option value="64-369">64-3694</option>
+                        <option value="75-3694">75-3694</option>
+                        <option value="52-3727">52-3727</option>
+                        <option value="75-3492">75-3492</option>
+                    </select>
+                </div>
+    
+                <div class="form__group">
+                    <label for="text" class="form__label-select">Número(s) de Factura(s) (Uno por Línea)</label>
+                    <textarea name="facturasProcesar" id="facturasProcesar" cols="20" rows="10" class="form__textarea"></textarea>
+                </div>
+    
+                <input type="submit" class="form__submit" value="Enviar">
+            </div>
+        </form>
+        <form class="form__table">
+            <table>
+                <tr>
+                    <th>Factura</th>
+                    <th>Descripción Mercancia</th>
+                    <th>Numero de Parte</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>No. Serie</th>
+                    <th>Datos Clientes</th>
+                    <th>Datos provedor</th>
+                </tr>
+                <tr>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                </tr>
+                <tr>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                </tr>
+                <tr>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                    <td>Correcto</td>
+                </tr>
+                
+              </table>
+        </form>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
